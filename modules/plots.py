@@ -28,7 +28,7 @@ def plotar_metricas(acuracia_por_epoca: list, precisao_por_epoca: list, revocaca
     """
     fig, axs = plt.subplots(2, 3, figsize=(18, 6))
 
-    #Plotando Acurácia
+    # Plotando Acurácia
     axs[0, 0].plot(acuracia_por_epoca, label="Acurácia", color="blue")
     axs[0, 0].set_title("Acurácia X Épocas")
     axs[0, 0].set_xlabel("Épocas")
@@ -37,7 +37,7 @@ def plotar_metricas(acuracia_por_epoca: list, precisao_por_epoca: list, revocaca
     axs[0, 0].grid(True)
     axs[0, 0].legend()
 
-    #Plotando Precisão
+    # Plotando Precisão
     axs[0, 1].plot(precisao_por_epoca, label="Precisão", color="green")
     axs[0, 1].set_title("Precisão X Épocas")
     axs[0, 1].set_xlabel("Épocas")
@@ -46,7 +46,7 @@ def plotar_metricas(acuracia_por_epoca: list, precisao_por_epoca: list, revocaca
     axs[0, 1].grid(True)
     axs[0, 1].legend()
 
-    #Plotando Revocação
+    # Plotando Revocação
     axs[0, 2].plot(revocacao_por_epoca, label="Revocação", color="red")
     axs[0, 2].set_title("Revocação X Épocas")
     axs[0, 2].set_xlabel("Épocas")
@@ -55,7 +55,7 @@ def plotar_metricas(acuracia_por_epoca: list, precisao_por_epoca: list, revocaca
     axs[0, 2].grid(True)
     axs[0, 2].legend()
 
-    #Plotando F1-Score
+    # Plotando F1-Score
     axs[1, 0].plot(f1_por_epoca, label="F1-Score", color="purple")
     axs[1, 0].set_title("F1-Score X Épocas")
     axs[1, 0].set_xlabel("Épocas")
@@ -64,7 +64,7 @@ def plotar_metricas(acuracia_por_epoca: list, precisao_por_epoca: list, revocaca
     axs[1, 0].grid(True)
     axs[1, 0].legend()
 
-    #Plotando AUC-ROC
+    # Plotando AUC-ROC
     axs[1, 1].plot(auc_roc_por_epoca, label="AUC-ROC", color="orange")
     axs[1, 1].set_title("AUC-ROC X Épocas")
     axs[1, 1].set_xlabel("Épocas")

@@ -74,10 +74,10 @@ def avaliar_modelo(X_teste: DataFrame, y_teste: Series, pesos: list, bias: float
     Avalia o modelo em um conjunto de teste usando várias métricas.
 
     Parâmetros de entrada:
-        X_teste (DataFrame): Conjunto de dados de teste.
-        y_teste (Series): Rótulos verdadeiros do conjunto de teste.
-        pesos (list): Pesos do modelo.
-        bias (float): Bias do modelo.
+        X_teste: Conjunto de dados de teste.
+        y_teste: Rótulos verdadeiros do conjunto de teste.
+        pesos: Pesos do modelo.
+        bias: Bias do modelo.
 
     Retorna:
         dict: Dicionário contendo:

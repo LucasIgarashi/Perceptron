@@ -148,7 +148,7 @@ def entropia_cruzada(alvo_real: float, alvo_previsto: float) -> float:
     Retorna:
         float: Valor da perda.
     """
-    alvo_previsto = np.clip(alvo_previsto, 1e-15, 1 - 1e-15)
+    alvo_previsto = np.clip(alvo_previsto, 1e-15, 1 - 1e-15) # Limitar os valores previstos para evitar problemas numéricos na entropia cruzada
     return -((alvo_real * np.log(alvo_previsto)) + ((1 - alvo_real) * np.log(1 - alvo_previsto)))
 
 def atualizar_pesos(pesos: np.ndarray, taxa_aprendizado: float, alvo_real: float, alvo_previsto: float, atributos: np.ndarray) -> np.ndarray:
